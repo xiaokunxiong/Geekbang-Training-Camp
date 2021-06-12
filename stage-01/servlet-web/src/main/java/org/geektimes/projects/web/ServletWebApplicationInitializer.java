@@ -1,4 +1,8 @@
-package org.geektimes.projects.servlet.web.org.geektimes.projects.servlet.web;
+package org.geektimes.projects.web;
+
+import org.geektimes.projects.web.filter.EncodeFilter;
+import org.geektimes.projects.web.servlet.ForwadServlet;
+import org.geektimes.projects.web.servlet.InitServlet;
 
 import javax.servlet.ServletContainerInitializer;
 import javax.servlet.ServletContext;
@@ -15,5 +19,6 @@ public class ServletWebApplicationInitializer implements ServletContainerInitial
 
     @Override
     public void onStartup(Set<Class<?>> set, ServletContext servletContext) throws ServletException {
+        System.out.println("servletContext-path="+servletContext.getContextPath());
     }
 }

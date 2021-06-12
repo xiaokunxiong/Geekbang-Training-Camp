@@ -1,4 +1,4 @@
-package org.geektimes.projects.servlet.web.org.geektimes.projects.servlet.web.filter;
+package org.geektimes.projects.web.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -7,12 +7,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @title: EncodingFilter
+ * @title: EncodeFilter
  * @Author sean
- * @Date: 2021/6/12 3:42 下午
+ * @Date: 2021/6/12 8:39 下午
  */
 @WebFilter(urlPatterns = "/*")
-public class EncodingFilter implements Filter {
+public class EncodeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 

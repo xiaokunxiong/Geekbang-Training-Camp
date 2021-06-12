@@ -1,4 +1,4 @@
-package org.geektimes.projects.servlet.web.org.geektimes.projects.servlet.web.servlet;
+package org.geektimes.projects.web.servlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
