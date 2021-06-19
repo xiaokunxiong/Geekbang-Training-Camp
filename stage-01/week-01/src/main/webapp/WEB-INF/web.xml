@@ -4,4 +4,26 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="false" version="3.0">
+    <resource-ref>
+        <description>DB Connection</description>
+        <!-- JNDI javax.naming.Name -->
+        <res-ref-name>jdbc/PoolPlatformDataSource</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <resource-ref>
+        <description>DB Connection</description>
+        <!-- JNDI javax.naming.Name -->
+        <res-ref-name>jdbc/derby</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+    <servlet>
+        <servlet-name>poolConnectionServlet</servlet-name>
+        <servlet-class>org.geektimes.projects.web.servlet.DataSourceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>poolConnectionServlet</servlet-name>
+        <url-pattern>/poolConnection</url-pattern>
+    </servlet-mapping>
 </web-app>
