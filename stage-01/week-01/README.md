@@ -5,4 +5,5 @@ week01:原生servlet转发
 week02：tomcat环境使用jndi获取数据库连接
     -- @see：org.geektimes.projects.web.servlet.DataSourceServlet
     --how to run: mvn tomcat8:run
+    访问路径http://localhost:8080/servlet-web/poolConnection
 
