@@ -20,7 +20,7 @@ import java.util.Objects;
  * @Author sean
  * @Date: 2021/6/19 12:13 下午
  */
-@WebServlet("/getConnection")
+//@WebServlet("/getConnection")
 public class DataSourceServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
